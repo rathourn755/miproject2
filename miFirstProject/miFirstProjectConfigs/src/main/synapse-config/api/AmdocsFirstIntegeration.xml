@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/amdocs" name="AmdocsFirstIntegeration" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" protocol="https">
+        <inSequence>
+            <payloadFactory media-type="json">
+                <format>{"Message": "Hello World!!"}</format>
+                <args/>
+            </payloadFactory>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>
